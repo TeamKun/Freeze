@@ -1,0 +1,27 @@
+name: Freeze
+version: ${project.version}
+main: com.bun133.freeze.Freeze
+api-version: 1.15
+authors: [Bun133]
+website: https://twitter.com/bun133_
+commands:
+#  start:
+#    permission: Freeze.op
+#    usage: /<command>
+#    description: Start Freezing
+#    permission-message: You don't have enough permissions!
+#  stop:
+#    permission: Freeze.op
+#    usage: /<command>
+#    description: Stop Freezing
+#    permission-message: You don't have enough permissions!
+  freeze:
+    permission: Freeze.op
+    usage: /<command> <start/stop>
+    description: Start or Stop Freezing
+    permission-message: You don't have enough permissions!
+
+permissions:
+  Freeze.op:
+    description: admin for Freeze Plugin
+    default: op
